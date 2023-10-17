@@ -97,11 +97,11 @@ var config = {
 
 			var game = new Phaser.Game(config);
 			function preload () { // tend to load assets here
-				//this.load.image('sky', 'assets/sky.jpg'); // variable, path
+				this.load.image('sky', 'assets/sky.jpg'); // variable, path
 				//this doesn't exist but you know what I mean. I think it uses the same path.
 			}
 			function create () {
-				//this.add.image(920, 540, 'sky'); // x, y, variable
+				this.add.image(920, 540, 'sky'); // x, y, variable
 				// this coords because x/2 and y/2 to center it. Again can't use cuz no image
 			}
 			function update () {}
