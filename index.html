@@ -6,9 +6,7 @@
 		<script type = "text/javascript" src="js/autoplay.js"></script>
 	</head>
 	<body>
-	    	<video id="video" width="320" height="240" autoplay muted></video>
-		<button type="button" onclick="showVideo()" id="button">Click Me</button>
-		<script type="text/javascript">
+	    	<script type="text/javascript">
 	   		var video = document.getElementById('video');
 			var source = document.createElement('source');
 			source.setAttribute('src', 'assets/sample-5s.mp4');
@@ -16,12 +14,15 @@
 			
 			setTimeout(function() {
 				video.pause();
-				source.setAttribute('src', 'http://techslides.com/demos/sample-videos/small.webm');
-				source.setAttribute('type', 'video/webm');
+				source.setAttribute('src', 'assets/sample-5s.mp4');
+				source.setAttribute('type', 'video/mp4');
 				video.load();
 				video.play();
 			}, 3000);
 	  	</script>
+		<video id="video" width="320" height="240"></video>
+		<button type="button" onclick="showVideo()" id="button">Click Me</button>
+		
 		
 	</body>
 </html>
